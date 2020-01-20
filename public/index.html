@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script type="module" src="/src/contactMe.js"></script>
+  <!-- <script type="module" src="../src/main.js"></script> -->
+  <script type="module" src="../src/portfolio.js"></script>
+  <script type="module" src="../src/skills.js"></script>
+  <script type="module" src="../src/timeline.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/jquerypp.custom.js"></script>
+  <script src="js/jquery.bookblock.js"></script>
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <title>Site cv Aurélie Debay</title>
+</head>
+
+<body>
+  <section id="homeTab">
+    <!-- Navbar -->
+    <div class="topnav" id="myTopnav">
+      <a href="#homeTab"><i class="fa fa-fw fa-home"></i> Accueil</a>
+      <a href="#aboutMeTab"><i class="fa fa-fw fa-user"></i> À propos</a>
+      <a href="#timelineTab"><i class="fa fa-briefcase"></i> Parcours</a>
+      <a href="#skillsTab"><i class="fa fa-graduation-cap"></i></i> Compétences</a>
+      <a href="#portfolioTab"><i class="fa fa-code"></i> Portfolio</a>
+      <a href="#contactMeTab"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+
+      <a href="https://www.linkedin.com/in/aureliedebay/" target="_blank"><span class="fa fa-linkedin"></span></a>
+      <a href="https://github.com/Aurelie2b" target="_blank"><span class="fa fa-github"></span></a>
+      <a href="tel:0032485830729" target="_blank"><span class="fa fa-mobile"></span></a></li>
+      <a href="mailto:debay.aurelie@gmail.com" target="_blank"><span class="fa fa-envelope"></span></a>
+    </div>
+    <img id="backgroundImage" src="../public/assets/images/fontVideo.gif">
+  </section>
+
+  <!-- start about me section-->
+  <section id="aboutMeTab">
+    <div class="row">
+      <div class="content col-md-offset-6 col-lg-offset-6" id="contentAboutMe">
+        <h1 class="section-header">À propos</h1>
+        Actuellement en formation de Développeur d'applications Web à <a href="https://www.interface3.be/"
+          target="_blank">Interface3</a> et
+        certifiée en juin 2020, je suis curieuse, logique, ambitieuse
+        et responsable. <br>.
+        <button id="btn Resume"><a href="./public/assets/images/Debay_Aurelie_CV_FR.pdf" download="cv"
+            class="btn btn-primary">Télécharger
+            mon cv</a></button>
+      </div>
+      </p>
+      <div id="logoI3"><a href="https://www.interface3.be/" target="_blank"><img src="./public/assets/images/interface3.png" alt=""></a>
+      </div>
+    </div>
+    <div class="containers col-lg-6 col-md-6">
+      <div class="pic"><img id="imgAboutMe" src="./public/assets/images/aurel.png" alt=""></div>
+      <!-- <div class="social1">
+        <i class="fa fa-facebook" aria-hidden="true"></i> 
+      </div>
+      <div class="social2">
+      <i class="fa fa-dribbble" aria-hidden="true"></i>
+      </div>
+      <div class="social3">
+        <i class="fa fa-codepen" aria-hidden="true"></i>
+    </div> -->
+    </div>
+  </section>
+
+  <!-- start jobs section-->
+
+  <section id="timelineTab" class="cd-timeline js-cd-timeline">
+    <h1 class="section-header">PARCOURS</h1>
+    <div class="container max-width-lg cd-timeline__container" id="container">
+    </div>
+  </section>
+
+  <!-- start skills section-->
+
+  <section id="skillsTab">
+    <div id="mySkills">
+      <h1 class="section-header">COMPÉTENCES</h1>
+      <div class="accordion" id="accordionExample">
+      </div>
+    </div>
+  </section>
+
+  <!-- start portfolio section-->
+
+  <section id="portfolioTab">
+    <div class="container">
+      <div class="main clearfix">
+        <div class="bb-custom-wrapper">
+          <div id="bb-bookblock" class="bb-bookblock">
+          </div>
+          <nav class="portfolio">
+            <button id="bb-nav-first" type="button" class="btn btn-outline-dark">First page</button>
+            <button id="bb-nav-prev" type="button" class="btn btn-outline-dark">Previous</button>
+            <button id="bb-nav-next" type="button" class="btn btn-outline-dark">Next</button>
+            <button id="bb-nav-last" type="button" class="btn btn-outline-dark">Last page</button>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- start contact me section-->
+
+  <section id="contactMeTab">
+    <section id="contact">
+    <h1 class="section-header"><i class="fa fa-code"></i> CONTACT <i class="fa fa-code"></i></h1>
+      <div class="contact-wrapper">
+        <form class="form-horizontal" role="form" name="contact_form">
+          <div class="form-group" id="messageBody">
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="name" placeholder="NOM" name="name" value="" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-12">
+              <textarea class="form-control" rows="10" id='message' placeholder="MESSAGE" name="message"
+                required></textarea>
+            </div>
+          </div>
+          <button class="btn btn-primary send-button" id="submit" value="Send" onclick="toggle()">
+          </button>
+        </form>
+        <section id="messageSent" class="form-horizontal">
+          <h3>Votre message a bien été envoyé</h3>
+          <!-- <img class="messageSentLogo" src="./assets/images/messageSent.png"> -->
+        </section>
+        <div class="direct-contact-container">
+          <ul class="contact-list">
+            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span
+                  class="contact-text place">Bruxelles</span></i></li>
+            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
+                    href="tel:0032/485.83.07.29" title="Give me a call">0032/485.83.07.29</a></span></i></li>
+            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
+                    href="mailto:debay.aurelie@gmail.com"
+                    title="Send me an email">debay.aurelie@gmail.com</a></span></i></li>
+          </ul>
+          <ul class="social-media-list">
+              <li><a href="https://www.linkedin.com/in/aureliedebay/" target="_blank" class="contact-icon">
+                <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="https://github.com/Aurelie2b" target="_blank" class="contact-icon">
+                <i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="tel:0032/485.83.07.29" target="_blank" class="contact-icon">
+                <i class="fa fa-mobile" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="mailto:debay.aurelie@gmail.com" target="_blank" class="contact-icon">
+                <i class="fa fa-envelope" ></i></a>
+            </li>
+          </ul>
+          <hr>
+        </div>
+    </section>
+    <script type="text/javascript" src="../src/smtp.js"></script>
+    <script type="text/javascript" src="../src/main.js"></script>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-copyright text-center py-3" id="endFooter"><small>© 2020 Aurélie Debay | All Rights
+        Reserved</small>
+    </div>
+  </footer>
+</body>
+
+</html>

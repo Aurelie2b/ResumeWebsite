@@ -1,0 +1,65 @@
+h3{
+  margin-left: 1%;
+}
+
+.card{
+  background-color: #bcbabe;
+}
+
+.accordion {
+  background-color: #a1D6e2;
+  color: black;
+  padding: 4px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 0.8em;
+  transition: 0.4s;
+  width: 76% !important;
+  height: 5%!important;
+  box-shadow: 6px 6px 7px #888888;
+}
+
+.active {
+  background-color: #bcbabe;
+  color: black;
+}
+
+.card-body{
+  color: black;
+  padding: 0.55rem;
+  background-color: #1995ad;
+}
+
+.card-header {
+  padding: 0.3rem 1.25rem;
+}
+
+.accordion:after {
+  color: #1996ad;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: inline;
+  width: 100%;
+}
+
+#panel {
+  padding: 0 18px;
+  background-color: #a1D6e2;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+section#skills {
+  margin-top: 3%;
+}
+
+div#mySkills {
+  text-align: -webkit-center;
+}
+
