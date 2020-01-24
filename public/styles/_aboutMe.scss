@@ -1,12 +1,8 @@
-#contentAboutMe {
-  margin-left: 15%;
-  margin-top: 15%;
-  padding: 0%;
-    text-align: center;
-    line-height: 2.6;
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+h2{
+  line-height : 5px;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
- 
+
 #imgAboutMe{
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -14,68 +10,75 @@
   margin-left: 25%;
 }
 
-.pic {
+.pic
+{
   box-shadow: 6px 6px 7px #888888;
-  width: 300px;
-  height: 300px;
+  width:300px;
+  height:300px;
   position: relative;
   overflow: hidden;
-  margin-top: 100px;
-  margin-left: 145px;
+  margin-top:100px;
+  margin-left:145px;
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.pic:before {
-  content: "";
-  margin-top: -63px;
-  margin-left: -80px;
+.pic:before
+{
+  content: '';
+  margin-top:-63px;
+  margin-left:-80px;
   position: absolute;
   width: 450px;
   height: 450px;
-  background-color: #545454;
+  background-color: 	#696969;
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-.social1
+.pic:hover , .envelope:hover , .pdf:hover,  .linkedin:hover , .logoI3:hover , .git:hover , .mobil:hover 
+{
+  box-shadow: 3px 3px 7px #888888;
+  cursor:pointer;
+}
+
+.envelope
 {
   box-shadow: 6px 6px 7px #888888;
   width:80px;
   height:80px;
-  background-color:#3b5998;
-  margin-top:-57px;
-  margin-left:305px;
+  background-color: #1995ad;
+  margin-top:-121px;
+  margin-left:30px;
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
-.social1 > i
+.envelope > i
 {
   font-size:60px;
-  margin-top:13px;
-  margin-left:20px;
+  margin-top:8px;
+  margin-left:6px;
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   color:#ffffff;
 }
 
-.social2
+.pdf
 {
   box-shadow: 6px 6px 7px #888888;
   width:80px;
   height:80px;
-  background-color:#C73B6F;
-  margin-top:-142px;
-  margin-left:370px;
+  background-color:#bcbabe;
+  margin-top:1px;
+  margin-left:185px;
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.social2 > i
+.pdf > i
 {
   font-size:60px;
   margin-top:8px;
@@ -86,44 +89,123 @@
   color:#ffffff;
 }
 
-.social3
+.linkedin
 {
   box-shadow: 6px 6px 7px #888888;
   width:80px;
   height:80px;
-  background-color:#000000;
-  margin-top:-143px;
-  margin-left:435px;
+  background-color:#a1d6e2;
+  margin-top:-4px;
+  margin-left:106px;
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.social3 > i
+.linkedin > i
 {
   font-size:60px;
-  margin-top:9px;
-  margin-left:9px;
+  margin-top:8px;
+  margin-left:13px;
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   color:#ffffff;
 }
 
-
-.pic:hover,
-.box1:hover,
-.box2:hover,
-.social1:hover,
-.social2:hover,
-.social3:hover {
-  box-shadow: 3px 3px 7px #888888;
-  cursor: pointer;
+.logoI3
+{
+  box-shadow: 6px 6px 7px #888888;
+  width:80px;
+  height:80px;
+  background-color:#bcbabe;
+  margin-top:-80px;
+  margin-left:321px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
-.content {
-  height: 50%;
-  width: 500px;
+.logoI3 #logoI3
+{
+  width: 150%;
+  margin-top:26%;
+  margin-left:0;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
+
+.git
+{
+  box-shadow: 6px 6px 7px #888888;
+  width:80px;
+  height:80px;
+  background-color:#a1d6e2;
+  margin-top:-160px;
+  margin-left:402px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.git > i
+{
+  font-size:60px;
+  margin-top:8px;
+  margin-left:13px;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color:#ffffff;
+}
+
+.mobil
+{
+  box-shadow: 6px 6px 7px #888888;
+  width:80px;
+  height:80px;
+  background-color:#1995ad;
+  margin-top:-155px;
+  margin-left:480px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.mobil > i
+{
+  font-size:60px;
+  margin-top:9px;
+  margin-left:25px;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color:#ffffff;
+}
+
+.content
+{
+  height:100%;
+  width:500px;
+}
+
+.contentHead
+{
+  font-size:60px;
+  font-weight:500;
+  text-decoration:underline;
+}
+
+sup
+{
+  font-style: italic;
+  font-size:smaller;
+  line-height : 1.5;
+}
+
+span
+{
+  color:red;
+}
+
 
 
 

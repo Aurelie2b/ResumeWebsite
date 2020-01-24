@@ -12,14 +12,14 @@ function displayOneItem(project) {
 	bbItemDiv.appendChild(bbItemImage);
 	bbBookBlock.appendChild(bbItemDiv);
 
-	var overlayDiv = document.createElement('div');
-	overlayDiv.className = 'overlay';
-	var text = document.createElement('p');
-	text.className = 'text';
-	text.innerHTML = project.categorie ;
+	// var overlayDiv = document.createElement('div');
+	// overlayDiv.className = 'overlay';
+	// var text = document.createElement('p');
+	// text.className = 'text';
+	// text.innerHTML = project.categorie ;
 
-	overlayDiv.appendChild(text);
-	bbBookBlock.appendChild(overlayDiv);
+	// overlayDiv.appendChild(text);
+	// bbBookBlock.appendChild(overlayDiv);
 	
 }
 
