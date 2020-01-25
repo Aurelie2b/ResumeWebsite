@@ -3,8 +3,38 @@ body {
   background: url("https://s-media-cache-ak0.pinimg.com/736x/f4/ac/6a/f4ac6aac3afb587f6cae04155656fca3.jpg");
 }
 
-h1{
-  text-decoration: underline overline
+h1 {
+  text-decoration: underline overline;
+}
+
+footer {
+  position: absolute;
+  background-color: #1995ad;
+  padding: 2%;
+  text-align: center;
+  width: 100%;
+}
+
+span {
+  color: red;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  height: 100%;
+}
+
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  outline: none;
+  cursor: pointer;
 }
 
 .topnav {
@@ -25,9 +55,13 @@ h1{
   font-size: 17px;
   text-decoration: blink !important;
   text-align: center !important;
+  margin-left: 2%;
+}
+.active{
+  color: black!important;
 }
 
-.topnav a:hover {
+.topnav .bouton:hover {
   background-color: #1995ad;
   color: black;
   text-decoration: underline !important;
@@ -38,38 +72,69 @@ h1{
   color: white;
 }
 
-.topnav .icon {
-  display: none;
-}
-
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  width: 80%;
-  height: 100%;
-}
-
-#logoI3 {
-  margin-left: 40%;
-  width: 40%;
-}
-
-#endFooter {
-  background-color: #1995ad;
-  padding: 2%;
+.btns {
+  background-color: #bcbabe;
+  color: black;
+  border: 2px solid #a1d6e2;
+  padding: 16px 32px;
   text-align: center;
-  width: 100%;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: var(--radius-md);
 }
 
+.btns {
+  box-shadow: 6px 6px 7px #888888;
+  font-size: 16px;
+}
+
+.btns:hover {
+  background-color: #1995ad;
+  border: 2px solid #bcbabe;
+  color: white;
+}
+
+.btns:active {
+  background-color: #1995ad;
+  border: 2px solid #bcbabe;
+  color: white;
+  transform: translateY(4px);
+}
+
+.topBtn{
+  border-radius: 50%;
+  box-shadow: 6px 6px 7px #888888;
+  background-color: #bcbabe;
+  border: 2px solid #a1d6e2;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.topBtn:hover {
+  background-color: #1995ad;
+  border: 2px solid #bcbabe;
+  color: white;
+}
+
+.topBtn:active {
+  background-color: #1995ad;
+  border: 2px solid #bcbabe;
+  color: white;
+  transform: translateY(4px);
+}
 
 @media screen and (max-width: 500px) {
   .topnav a {
     float: none;
     display: block;
   }
-  #socialIcon{
+  #socialIcon {
     display: inline-block;
   }
-
 }

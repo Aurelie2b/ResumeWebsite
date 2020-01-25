@@ -35,8 +35,21 @@ h3{
   padding: 0.3rem 1.25rem;
 }
 
+.cardBtn:hover {
+    background-color: #1995ad;
+    border: 2px solid #bcbabe;
+    color: white;
+  }
+  
+
+.cardBtn:active {
+  background-color: #1995ad;
+  color: white;
+  transform: translateY(4px);
+}
+
 .accordion:after {
-  color: #1996ad;
+  color: #a1D6e2;
   font-weight: bold;
   float: right;
   margin-left: 5px;

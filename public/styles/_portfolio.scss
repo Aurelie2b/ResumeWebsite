@@ -2,18 +2,16 @@ a img {
   border: none;
 }
 
-/* Header Style */
 .main,
 .container {
   margin: 0 auto;
-  padding: 4em;
+ padding-top: 5%;
 }
 
 .container {
   height: 100%;
 }
 
-/* Main Content */
 .main {
   width: 80%;
   height: 80%;
@@ -79,6 +77,7 @@ a img {
   transform-style: preserve-3d;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
+  border-radius: var(--radius-md);
 }
 
 .bb-vertical .bb-page {
@@ -170,7 +169,6 @@ a img {
   top: -100%;
 }
 
-/* Flipping classes */
 .bb-vertical .bb-flip-next,
 .bb-vertical .bb-flip-initial {
   -webkit-transform: rotateY(-180deg);
@@ -222,7 +220,6 @@ a img {
   border-color: #a1d6e2;
 }
 
-/* No JS */
 .no-js .bb-bookblock,
 .no-js ul.bb-custom-grid li {
   width: auto;

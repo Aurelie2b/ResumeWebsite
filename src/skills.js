@@ -21,13 +21,13 @@ function displaySkillDescription(skill) {
 function displayOneSkill(experience) {
   var accordion = document.getElementById('accordionExample');
   var myString = '<div class="card">' +
-    '<div class="card-header" id="headingOne">' +
+    '<bouton class="card-header cardBtn" id="headingOne">' +
     '<h2 class="mb-0">' +
-    '<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#'.concat(experience.categorie.replace(/ /g, '')).replace('/', '') + '" aria-expanded="false" aria-controls="'.concat(experience.categorie.replace(/ /g, '')) + '">'
+    '<div class="btn btn-link" data-toggle="collapse" data-target="#'.concat(experience.categorie.replace(/ /g, '')).replace('/', '') + '" aria-expanded="false" aria-controls="'.concat(experience.categorie.replace(/ /g, '')) + '">'
       .concat(experience.categorie) +
-    '</button>' +
-    '</h2>' +
     '</div>' +
+    '</h2>' +
+    '</bouton>' +
     displaySkillDescription(experience);
   accordion.innerHTML += myString;
 }

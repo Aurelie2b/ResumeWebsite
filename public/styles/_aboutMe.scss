@@ -55,7 +55,7 @@ h2{
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.envelope > i
+.envelope .fa
 {
   font-size:60px;
   margin-top:8px;
@@ -78,7 +78,7 @@ h2{
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.pdf > i
+.pdf .fa
 {
   font-size:60px;
   margin-top:8px;
@@ -101,7 +101,7 @@ h2{
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.linkedin > i
+.linkedin .fa
 {
   font-size:60px;
   margin-top:8px;
@@ -147,7 +147,7 @@ h2{
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.git > i
+.git .fa
 {
   font-size:60px;
   margin-top:8px;
@@ -170,7 +170,7 @@ h2{
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.mobil > i
+.mobil .fa
 {
   font-size:60px;
   margin-top:9px;
@@ -185,6 +185,7 @@ h2{
 {
   height:100%;
   width:500px;
+  margin-left:5% ;
 }
 
 .contentHead
@@ -192,6 +193,7 @@ h2{
   font-size:60px;
   font-weight:500;
   text-decoration:underline;
+  margin-left: 5%;
 }
 
 sup
@@ -201,9 +203,8 @@ sup
   line-height : 1.5;
 }
 
-span
-{
-  color:red;
+.row{
+  margin-left: 5%;
 }
 
 

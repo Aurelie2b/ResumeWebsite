@@ -1,9 +1,13 @@
+hr {
+  border-color: black!important ;
+}
+
 #contact {
   width: 100%;
   height: 100vh;
-  overflow: hidden;
   padding-bottom: 200px;
   color: black;
+  margin-bottom: 5%;
 }
 
 .section-header {
@@ -26,11 +30,12 @@
 .form-horizontal {
   float: left;
   max-width: 400px;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-weight: 400;
 }
 
-.form-control, textarea {
+.form-control,
+textarea {
   max-width: 400px;
   background-color: #111;
   letter-spacing: 1px;
@@ -42,25 +47,21 @@
   height: 34px;
   width: 400px;
   overflow: hidden;
-  transition: all .2s ease-in-out;
-  background-color: red;
+  transition: all 0.2s ease-in-out;
 }
 
 .button {
   width: 400px;
   height: 34px;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
 }
 
 .send-text {
   display: block;
   margin-top: 10px;
-  font: 300 14px 'Lato', sans-serif;
+  font: 300 14px "Lato", sans-serif;
   letter-spacing: 2px;
-}
-
-.button:hover {
-  transform: translate3d(0px, -29px, 0px);
 }
 
 .direct-contact-container {
@@ -68,7 +69,6 @@
   float: right;
   margin-top: 5px;
   border-bottom-color: black;
-  
 }
 
 .contact-list {
@@ -81,12 +81,12 @@
 
 .list-item {
   line-height: 4;
- color: #1995ad;
- text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  color: #1995ad;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .contact-text {
-  font: 300 18px 'Lato';
+  font: 300 18px "Lato";
   letter-spacing: 1.9px;
   color: black;
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
@@ -123,11 +123,11 @@
 }
 
 .social-media-list li a {
-color:black;
+  color: black;
 }
 
 .social-media-list li {
-  position: relative; 
+  position: relative;
   top: 0;
   left: -20px;
   display: inline-block;
@@ -138,13 +138,13 @@ color:black;
   border-radius: 50%;
   color: black;
   background-color: #bcbabe;
-  cursor: pointer; 
-  transition: all .2s ease-in-out;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
   box-shadow: 6px 6px 7px #888888, inset 0 2px 0 rgba(#000, 0.08), 0 3px 0 4px rgba(#000, 0.05);
 }
 
 .social-media-list li:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -153,29 +153,23 @@ color:black;
   line-height: 70px;
   border-radius: 50%;
   opacity: 0;
-  box-shadow: 0 0 0 1px #fff;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-color: #a1d6e2;
 }
 
 .social-media-list li:hover {
-  background-color: #a1d6e2; 
+  background-color: #1995ad;
 }
 
 .social-media-list li:hover:after {
-  opacity: 1;  
-  transform: scale(1.12);
-  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  opacity: 1;
 }
 
 .social-media-list li:hover a {
   color: #f1f1f2;
 }
 
-hr {
-  border-color: black ;
-}
-
-.messageSentLogo{
+.messageSentLogo {
   height: 20%;
   width: 20%;
 }
@@ -185,22 +179,22 @@ section#messageSent {
   padding-top: 2%;
 }
 
-
 @media screen and (max-width: 760px) {
-    #contact {
-        height: 1000px;
-    }
+  #contact {
+    height: 1000px;
+  }
   .section-header {
     font-size: 65px;
   }
-  .direct-contact-container, .form-horizontal {
+  .direct-contact-container,
+  .form-horizontal {
     float: none;
     margin: 10px auto;
-  }  
+  }
   .direct-contact-container {
     margin-top: 60px;
     max-width: 300px;
-  }    
+  }
   .social-media-list li {
     height: 60px;
     width: 60px;
@@ -216,26 +210,30 @@ section#messageSent {
 @media screen and (max-width: 569px) {
   #contact {
     height: 1200px;
-    }
-  .section-header{
+  }
+  .section-header {
     font-size: 50px;
   }
-  .direct-contact-container, .form-wrapper {
+  .direct-contact-container,
+  .form-wrapper {
     float: none;
     margin: 0 auto;
-  }  
-  .form-control, textarea {
+  }
+  .form-control,
+  textarea {
     max-width: 340px;
     margin: 0 auto;
   }
-  
-  .name, .email, textarea {
+
+  .name,
+  .email,
+  textarea {
     width: 280px;
-  } 
+  }
   .direct-contact-container {
     margin-top: 60px;
     max-width: 280px;
-  }  
+  }
   .social-media-list {
     left: 0;
   }
@@ -250,12 +248,10 @@ section#messageSent {
     height: 55px;
     line-height: 55px;
   }
-  
 }
 
 @media screen and (max-width: 410px) {
-  .send-button {
+  .btns {
     width: 99%;
   }
 }
-

@@ -6,86 +6,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/f7bf0e34a8.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script type="module" src="/src/contactMe.js"></script>
-  <!-- <script type="module" src="../src/main.js"></script> -->
+  <script type="module" src="../src/main.js"></script>
   <script type="module" src="../src/portfolio.js"></script>
   <script type="module" src="../src/skills.js"></script>
   <script type="module" src="../src/timeline.js"></script>
   <script src="js/modernizr.custom.js"></script>
   <script src="js/jquerypp.custom.js"></script>
   <script src="js/jquery.bookblock.js"></script>
-  <script>document.getElementsByTagName("html")[0].className += " js";</script>
   <title>Site cv Aurélie Debay</title>
 </head>
 
 <body>
-  <section id="homeTab">
+  <section id="homeTab" class="page-section">
     <!-- Navbar -->
     <div class="topnav" id="myTopnav">
-      <a href="#homeTab"><i class="fa fa-fw fa-home"></i> Accueil</a>
-      <a href="#aboutMeTab"><i class="fa fa-fw fa-user"></i> À propos</a>
-      <a href="#timelineTab"><i class="fa fa-briefcase"></i> Parcours</a>
-      <a href="#skillsTab"><i class="fa fa-graduation-cap"></i></i> Compétences</a>
-      <a href="#portfolioTab"><i class="fa fa-code"></i> Portfolio</a>
-      <a href="#contactMeTab"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+      <a href="#homeTab" class="bouton"><i class="fa fa-fw fa-home"></i> Accueil</a>
+      <a href="#aboutMeTab" class="bouton"><i class="fa fa-fw fa-user"></i> À propos</a>
+      <a href="#timelineTab" class="bouton"><i class="fa fa-briefcase"></i> Parcours</a>
+      <a href="#skillsTab" class="bouton"><i class="fa fa-graduation-cap"></i></i> Compétences</a>
+      <a href="#portfolioTab" class="bouton"><i class="fa fa-code"></i> Portfolio</a>
+      <a href="#contactMeTab" class="bouton"><i class="fa fa-fw fa-envelope"></i> Contact</a>
 
-      <a href="https://www.linkedin.com/in/aureliedebay/" target="_blank"><i id="socialIcon" class="fa fa-linkedin"></i></a>
-      <a href="https://github.com/Aurelie2b" target="_blank"><i id="socialIcon" class="fa fa-github"></i></a>
-      <a href="tel:0032485830729" target="_blank"><i id="socialIcon" class="fa fa-mobile"></i></a>
-      <a href="mailto:debay.aurelie@gmail.com" target="_blank"><i id="socialIcon" class="fa fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/aureliedebay/" target="_blank" class="bouton"><i id="socialIcon"
+          class="fa fa-linkedin fa-lg"></i></a>
+      <a href="https://github.com/Aurelie2b" target="_blank" class="bouton"><i id="socialIcon" class="fa fa-github fa-lg"></i></a>
+      <a href="tel:0032485830729" target="_blank" class="bouton"><i id="socialIcon" class="fa fa-mobile fa-lg"></i></a>
+      <a href="mailto:debay.aurelie@gmail.com" target="_blank" class="bouton"><i id="socialIcon" class="fa fa-envelope fa-lg"></i></a>
     </div>
     <img id="backgroundImage" src="../public/assets/images/fontVideo.gif">
   </section>
-
-
+  
+  <button onclick="topFunction()" class="topBtn" id="topBtn" title="Go to top"><i class="fa fa-chevron-circle-up fa-10x"></i></button>
 
   <!-- start about me section-->
-  <section id="aboutMeTab">
-      <div class="row">
-          <div class="col-lg-6 col-md-6">
-            <div class="pic"><img id="imgAboutMe" src="./public/assets/images/aurel.png" alt="">
-            </div>
-            <div class="envelope">
-                <i class="fa fa-envelope" aria-hidden="true"></i> 
-            </div>
-            <div class="linkedin">
-                <i class="fa fa-linkedin"  aria-hidden="true"></i>
-            </div>
-            <div class="pdf">
-                <i class="fa fa-folder-open" aria-hidden="true"><a href="./public/assets/images/Debay_Aurelie_CV_FR.pdf" download="cv"></a></i> 
-              </div>
-            <div class="logoI3">
-              <i><a href="https://www.interface3.be/" target="_blank"><img id="logoI3" src="./public/assets/images/interface3.png" alt=""></a></i> 
-            </div>
-            <div class="git">
-            <i class="fa fa-github" aria-hidden="true"></i>
-            </div>
-            <div class="mobil">
-              <i class="fa fa-mobile" aria-hidden="true"></i>
-            </div>
-          </div>
-          
-          <div class="content col-md-offset-6 col-lg-offset-6">
-              <h1 class="section-header">À PROPOS</h1>
-            
-            <h2>Bonjour, <br/><br/>
-              Je suis actuellement en formation de Développeur d'applications Web à <a href="https://www.interface3.be/"
-              target="_blank">Interface3</a> et
-            certifiée en juin 2020, je suis curieuse, logique, ambitieuse
-            et responsable.
-              <br/><br/>
-            </h2>
-            
-          </div>
-          </div> 
-        </section>
+  <section id="aboutMeTab" class="page-section">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <div class="pic"><img id="imgAboutMe" src="./public/assets/images/aurel.png" alt="">
+        </div>
+        <div class="envelope">
+          <a href="mailto:debay.aurelie@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+        </div>
+        <div class="linkedin">
+          <a href="https://www.linkedin.com/in/aureliedebay/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="pdf">
+          <a href="./assets/images/Debay_Aurelie_cv_fr_online.pdf" download="cv"><i class="fa fa-folder-open"></i></a>
+        </div>
+        <div class="logoI3">
+          <i><a href="https://www.interface3.be/" target="_blank"><img id="logoI3"
+                src="./public/assets/images/interface3.png" alt=""></i></a>
+        </div>
+        <div class="git">
+          <a href="https://github.com/Aurelie2b" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+        <div class="mobil">
+          <a href="tel:0032/485.83.07.29" target="_blank"><i class="fa fa-mobile"></i></a>
+        </div>
+      </div>
+
+      <div class="content col-md-offset-6 col-lg-offset-6">
+        <h1 class="section-header">À PROPOS</h1>
+
+        <h2>Bonjour, <br /><br />
+          Je suis actuellement en formation de Développeur d'applications Web à <a href="https://www.interface3.be/"
+            target="_blank">Interface3</a> et
+          certifiée en juin 2020, je suis curieuse, logique, ambitieuse
+          et responsable.
+          <br /><br />
+        </h2>
+
+      </div>
+    </div>
+  </section>
 
   <!-- start jobs section-->
 
-  <section id="timelineTab" class="cd-timeline js-cd-timeline">
+  <section id="timelineTab" class="cd-timeline js-cd-timeline page-section">
     <h1 class="section-header">PARCOURS</h1>
     <div class="container max-width-lg cd-timeline__container" id="container">
     </div>
@@ -93,7 +111,7 @@
 
   <!-- start skills section-->
 
-  <section id="skillsTab">
+  <section id="skillsTab" class="page-section">
     <div id="mySkills">
       <h1 class="section-header">COMPÉTENCES</h1>
       <div class="accordion" id="accordionExample">
@@ -103,17 +121,17 @@
 
   <!-- start portfolio section-->
 
-  <section id="portfolioTab">
+  <section id="portfolioTab" class="page-section">
     <div class="container">
       <div class="main clearfix">
         <div class="bb-custom-wrapper">
           <div id="bb-bookblock" class="bb-bookblock">
           </div>
           <nav class="portfolio">
-            <button id="bb-nav-first" type="button" class="btn btn-outline-dark">First page</button>
-            <button id="bb-nav-prev" type="button" class="btn btn-outline-dark">Previous</button>
-            <button id="bb-nav-next" type="button" class="btn btn-outline-dark">Next</button>
-            <button id="bb-nav-last" type="button" class="btn btn-outline-dark">Last page</button>
+            <button id="bb-nav-first" type="button" class="btns"><i class="fa fa-angle-double-left fa-lg"></i></button>
+            <button id="bb-nav-prev" type="button" class="btns"><i class="fa fa-angle-left fa-lg"></i></button>
+            <button id="bb-nav-next" type="button" class="btns"><i class="fa fa-angle-right fa-lg"></i></button>
+            <button id="bb-nav-last" type="button" class="btns"><i class="fa fa-angle-double-right fa-lg"></i></button>
           </nav>
         </div>
       </div>
@@ -122,9 +140,9 @@
 
   <!-- start contact me section-->
 
-  <section id="contactMeTab">
+  <section id="contactMeTab" class="page-section">
     <section id="contact">
-    <h1 class="section-header"><i class="fa fa-code"></i> CONTACT <i class="fa fa-code"></i></h1>
+      <h1 class="section-header"><i class="fa fa-code"></i> CONTACT <i class="fa fa-code"></i></h1>
       <div class="contact-wrapper">
         <form class="form-horizontal" role="form" name="contact_form">
           <div class="form-group" id="messageBody">
@@ -143,35 +161,36 @@
                 required></textarea>
             </div>
           </div>
-          <button class="btn btn-primary send-button" id="submit" value="Send" onclick="toggle()">
-          </button>
+          
+          <div class="button btns" id="submit btn" value="Send" onclick="toggle()">Envoyer</i></div><span class="send-text"></span>
         </form>
+
         <section id="messageSent" class="form-horizontal">
           <h3>Votre message a bien été envoyé</h3>
-          <!-- <img class="messageSentLogo" src="./assets/images/messageSent.png"> -->
+          <img class="messageSentLogo" src="./assets/images/messageSent.png">
         </section>
         <div class="direct-contact-container">
           <ul class="contact-list">
             <li class="list-item"><i class="fa fa-map-marker fa-2x"><span
                   class="contact-text place">Bruxelles</span></i></li>
             <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
-                    href="tel:0032/485.83.07.29" title="Give me a call">0032/485.83.07.29</a></span></i></li>
+                    href="tel:0032/485.83.07.29">0032/485.83.07.29</a></span></i></li>
             <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
-                    href="mailto:debay.aurelie@gmail.com"
-                    title="Send me an email">debay.aurelie@gmail.com</a></span></i></li>
+                    href="mailto:debay.aurelie@gmail.com">debay.aurelie@gmail.com</a></span></i></li>
           </ul>
+          <hr>
           <ul class="social-media-list">
-              <li><a href="https://www.linkedin.com/in/aureliedebay/" target="_blank" class="contact-icon">
-                <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <li><a href="https://www.linkedin.com/in/aureliedebay/" target="_blank" class="contact-icon">
+                <i class="fa fa-linkedin"></i></a>
             </li>
             <li><a href="https://github.com/Aurelie2b" target="_blank" class="contact-icon">
-                <i class="fa fa-github" aria-hidden="true"></i></a>
+                <i class="fa fa-github"></i></a>
             </li>
             <li><a href="tel:0032/485.83.07.29" target="_blank" class="contact-icon">
-                <i class="fa fa-mobile" aria-hidden="true"></i></a>
+                <i class="fa fa-mobile"></i></a>
             </li>
             <li><a href="mailto:debay.aurelie@gmail.com" target="_blank" class="contact-icon">
-                <i class="fa fa-envelope" ></i></a>
+                <i class="fa fa-envelope"></i></a>
             </li>
           </ul>
           <hr>
@@ -182,7 +201,8 @@
     </div>
   </section>
   <footer>
-    <div class="footer-copyright text-center py-3" id="endFooter"><small>© 2020 Aurélie Debay  |   Made with L<span>&hearts;</span>VE   |   All Rights
+    <div class="footer-copyright text-center py-3" id="endFooter"><small>© 2020 Aurélie Debay | Made with
+        L<span>&hearts;</span>VE | All Rights
         Reserved</small>
     </div>
   </footer>
