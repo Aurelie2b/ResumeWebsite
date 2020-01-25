@@ -1,23 +1,38 @@
-//Get the button
-var topBtn = document.getElementById("topBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    topBtn.style.display = "block";
+// top button
+const scrollToTopButton = document.getElementById('topBtn');
+const scrollFunc = () => {
+  let y = window.scrollY;
+  if (y > 0) {
+    scrollToTopButton.className = "topBtn show";
   } else {
-    topBtn.style.display = "none";
+    scrollToTopButton.className = "topBtn hide";
   }
+};
+
+
+window.addEventListener("scroll", scrollFunc);
+
+const scrollToTop = () => {
+  const c = document.documentElement.scrollTop || document.body.scrollTop;
+  
+  if (c > 0) {
+    window.requestAnimationFrame(scrollToTop);
+
+    window.scrollTo(0, c - c / 10);
+  }
+};
+
+
+scrollToTopButton.onclick = function(e) {
+  e.preventDefault();
+  scrollToTop();
 }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
 
+
+//navbar buttons
 
 
 
