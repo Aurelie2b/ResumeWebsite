@@ -20,44 +20,47 @@ h3{
   box-shadow: 6px 6px 7px #888888;
 }
 
-.active {
-  background-color: #bcbabe;
-  color: black;
-}
-
 .card-body{
-  color: black;
+  color: white;
   padding: 0.55rem;
   background-color: #1995ad;
+  text-align: center;
+  font-size: large;
 }
 
 .card-header {
   padding: 0.3rem 1.25rem;
+  text-align: center;
 }
 
 .cardBtn:hover {
     background-color: #1995ad;
     border: 2px solid #bcbabe;
-    color: white;
   }
   
-
 .cardBtn:active {
-  background-color: #1995ad;
-  color: white;
   transform: translateY(4px);
 }
 
 .accordion:after {
-  color: #a1D6e2;
+  color:#1995ad;
   font-weight: bold;
   float: right;
   margin-left: 5px;
 }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display: inline;
-  width: 100%;
+.btn-link{
+  color: black;
+  margin: 1%;
+}
+
+.btn-link:hover{
+  color: white!important;
+}
+
+.btn-link:active {
+  background-color: #1995ad!important;
+  border: 2px solid #bcbabe!important;
 }
 
 #panel {

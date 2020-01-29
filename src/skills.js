@@ -23,7 +23,7 @@ function displayOneSkill(experience) {
   var myString = '<div class="card">' +
     '<bouton class="card-header cardBtn" id="headingOne">' +
     '<h2 class="mb-0">' +
-    '<div class="btn btn-link" data-toggle="collapse" data-target="#'.concat(experience.categorie.replace(/ /g, '')).replace('/', '') + '" aria-expanded="false" aria-controls="'.concat(experience.categorie.replace(/ /g, '')) + '">'
+    '<div class="btn-link" data-toggle="collapse" data-target="#'.concat(experience.categorie.replace(/ /g, '')).replace('/', '') + '" aria-expanded="false" aria-controls="'.concat(experience.categorie.replace(/ /g, '')) + '">'
       .concat(experience.categorie) +
     '</div>' +
     '</h2>' +

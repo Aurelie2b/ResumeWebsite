@@ -117,7 +117,7 @@
     .cd-timeline__block:nth-child(odd) &::before { // change triangle direction
       right: auto;
       left: 100%;
-      @include triangle(right, 7px, #a1d6e2); 
+      @include triangle(right, 7px, black); 
     }
   }
 }
